@@ -1,0 +1,22 @@
+<section class="list">
+	<ol>
+		<li *ngFor="let project of projects">
+			<span class="projectname" 
+			
+				
+			>
+				{{project.name}}
+			</span>
+            <input type="button" value="Remove" (click)="onRemoveClick(project)">
+
+		</li>
+	</ol>
+
+    
+<p>
+	<a [routerLink]="['/project']">Go back to add projects</a>
+</p>
+<p>
+	<a [routerLink]="['/bugs']">Go back to home</a>
+</p>
+</section>
