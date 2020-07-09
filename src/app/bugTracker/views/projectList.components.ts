@@ -8,7 +8,7 @@ import { FormsModule } from "@angular/forms";
 @Component({
 	selector : 'app-projects-edit',
 	template : `
-        <h1>List of projects</h1>
+        <h1>Add new projects</h1>
 		<section class="edit1">
 			<label for="">Project Name :</label>
 			<input type="text" [(ngModel)]="newProjectName">
@@ -16,7 +16,7 @@ import { FormsModule } from "@angular/forms";
 			<input type="button" value="Add New" (click)="onAddNewClick()">
 		</section>		
 		<p>
-        <a [routerLink]="['/listOfProjects']">Click to see the projects</a>
+        <a [routerLink]="['/listOfProjects']">List of projects</a>
     </p>
 	`
 })
